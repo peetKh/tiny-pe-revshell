@@ -119,21 +119,6 @@ start:
 
 
 
-
- ;------------------------------------------------------------------------------
- ; ExitProcess
-
-  ; GetProcAddress(ExitProcess)
-  push 0x00737365 ; sse
-  push 0x636f7250 ; corP
-  push 0x74697845 ; tixE
-  push esp
-  mov ebx, [ebp-0x8]  ; &Kernell32.dll
-  push ebx
-  call ebx    ; eax = &ExitProcess()
-  push 0
-  call eax    ; ExitProcess(0)
-
 ;===============================================================================
 codesize equ $ - code
 filesize equ $ - $$
