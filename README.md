@@ -11,7 +11,7 @@ such as UPX they remain at around 48kb, at least at the time I started this proj
 
 However in some situation, it is interesting to have a PE executable file as small as possible.
 
-This tools leverages on [some research](ttp://www.phreedom.org/research/tinype/) (done by others and found on internet) about generating
+This tools leverages on [some research](http://www.phreedom.org/research/tinype/) (done by others and found on internet) about generating
 the smallest PE file as possible.
 The original project was about downloading and executing a payload through webdav.
 
